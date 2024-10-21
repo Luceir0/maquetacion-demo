@@ -1,0 +1,15 @@
+.btn {
+    border-radius: 6px;
+    padding: 4px 8px;
+    cursor: pointer;
+
+    &__primary {
+        background-color: hsl(0, 0%, 0%);
+        color: hsl(0, 0%, 100%);
+    }
+
+    &__secondary {
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(0, 0%, 0%);
+    }
+}

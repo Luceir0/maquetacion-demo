@@ -1,0 +1,27 @@
+@use '../utils';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 8px;
+    color: var(--light);
+    background-color: var(--dark);
+
+    &__logo {
+        font-weight: 600;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 8px;
+    }
+
+    &__menu {
+        display: none;
+
+        @include utils.breakpoint-down(small) {
+            display: block;
+        }
+    }
+}

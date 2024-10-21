@@ -1,0 +1,18 @@
+@use '../utils';
+
+.full-grid {
+    @include utils.breakpoint(medium) {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: auto auto;
+    }
+
+    .menu {
+        background-color: var(--light-grey);
+        display: none;
+
+        @include utils.breakpoint(medium) {
+            display: block;
+        }
+    }
+}

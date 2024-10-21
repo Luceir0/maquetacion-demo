@@ -1,0 +1,17 @@
+@use '../utils';
+
+.footer {
+    padding: 12px 8px;
+    color: var(--light);
+    background-color: var(--dark);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: none;
+
+    @include utils.breakpoint(medium) {
+        display: block;
+    }
+}
